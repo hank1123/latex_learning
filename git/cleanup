@@ -1,0 +1,7 @@
+#!/bin/sh
+# name: cleanup
+# this is a cleanup script which remove the file xelatex create except *.pdf
+
+echo "starting cleanup... wait"
+rm *.aux *.fls *.synctex.gz *.log *.fdb_latexmk 2>clean.log 
+echo "finished cleanup"
